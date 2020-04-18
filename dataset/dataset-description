@@ -1,0 +1,23 @@
+### File description
+1 . train.csv - the training set 
+2 . test.csv - the test set
+### Data ﬁelds 
+
+ 1 . page likes - number of likes the facebook page has (shows user support for a wall posts) 
+ 2 . page checkin -number of people visited the place (only applicable to places, institutions, hotels, etc. pages ) 
+ 3 . daily crowd - count of users that are engaged with the page ( who frequently comment, share posts of page) 
+ 4 . page category - deﬁnes the category of source of document ( eg: brand, company, artist, etc.) 
+ 5 . F1-F8 - These features are aggregated by page, by calculating min, max, average, median and standard deviation of essential features.
+ 6 . c1 - The total number of comments before selected base date/time
+ 7 . c2 - The number of comments in last 24 hours, relative to base date/time.
+ 8 . c3 - The number of comments in last 48 to last 24 hours relative to base date/time.
+ 9 . c4 - The number of comments in the ﬁrst 24 hours after the publication of post but before base date/time. 
+10 . c5 - The diﬀerence between c2 and c3. 
+11 . base time - Selected time in order to simulate the scenario. ( decimal encoding 0-71) 
+12 . post length - Character count in the post. 
+13 . share count - This features counts the no of shares of the post, that how many peoples had shared this post on to their timeline. 
+14 . promotion - To reach more people with posts in News Feed, individual promote their post and this features tells that whether the post is promoted(1) or not(0). 
+15 . h target - Hours after base time when target variable is recorded 
+16 . post day - day of week when post was posted 
+17 . basetime day - day of week corresponding to base time (when data was collected) 
+18 . target - comments received after h target hours of base time
